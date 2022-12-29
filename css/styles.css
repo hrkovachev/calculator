@@ -1,0 +1,93 @@
+@font-face{
+    font-family:'digital7-mono';
+    src: url("../fonts/Digital7Mono.ttf");
+   }
+.main{
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+}
+
+.model-name{
+    text-align: right;
+}
+
+.calculator{
+    width: 400px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 3px;
+    padding: 10px;
+    border: solid black 1px;
+}
+
+.display{
+    height: 100px;
+    background-color: antiquewhite;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: brown;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'digital7-mono';
+    font-size: 3em;
+
+}
+
+.display-top-row{
+    display: flex;
+    height: 50%;
+    min-height: 36px;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.display-bottom-row{
+    display: flex;
+    height: 50%;
+    min-height: 36px;
+    justify-content: flex-end;
+    align-items:center;
+
+}
+
+.buttons-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.buttons-grid button{
+    aspect-ratio: 1;
+    background-color: whitesmoke;
+    border:1px solid #00AA66;
+    border-radius: 9px;
+    box-shadow: 0;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.buttons-grid button:hover{
+    background-color:#00AA66;
+    transition: all 0.3s;
+}
+
+.buttons-grid button:active{
+    background-color:#007546;
+    border: 1px solid #00AA66;
+    transition: all 0s;
+    color: aliceblue;
+}
+
+
+
+#btn-equal{
+    aspect-ratio: auto;
+}
+
+.span-2{
+    grid-column: span 2;
+}
